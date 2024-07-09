@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-oidc-auth',
-    version='0.0.11',
+    version='1.0.0',
     description='OpenID Connect client for Django applications',
     long_description='WIP',
     author='Lucas S. Magalhães',
@@ -14,7 +14,7 @@ setup(
     install_requires=[
         'Django>=1.5',
         'South==1.0.2',
-        'pyjwkest==0.6.2',
+        'pyjwkest==1.1.5',
         'requests',
     ],
     zip_safe=True
