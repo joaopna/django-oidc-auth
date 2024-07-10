@@ -92,7 +92,7 @@ def login_complete(request, login_complete_view='oidc-complete',
     credentials = response.json()
     credentials['provider'] = provider
     user = authenticate(credentials=credentials)
-    django_login(request, user)
+    django_login(request, user, backend='oidc_auth.auth.OpenIDConnectBackend')
 
     return redirect(nonce.redirect_url)
 
